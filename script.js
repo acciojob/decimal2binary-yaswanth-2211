@@ -1,23 +1,19 @@
 function decimalToBinary(num) {
 	let a="";
-  while(num>=0){
-      if(num==0){
-	      a=a+0;
-	      return a.split("").reverse().join("");
-	  }
-	  else if(num==1){
-	      a=a+1;
-	      return a.split("").reverse().join("");
-	  }
-	  else if(num%2==0){
-		  a=a+0
-		  num=num/2;
-		  num=parseInt(num/2);
-	  }
-	  else{
-		  a=a+1
+  while(num>0){
+	  if(num%2==0){
+		  a=0+a;
 		  num=parseInt(num/2);
 		  console.log(num);
+	  }
+	  else{
+		  a=1+a
+		  num=parseInt(num/2);
+		  console.log(num);
+	  }
+	  if(num==1){
+	      a=1+a;
+	      return a;
 	  }
   }
 }
