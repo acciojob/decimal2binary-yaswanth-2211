@@ -1,9 +1,6 @@
 function decimalToBinary(num) {
   //Write you code here
-	let sum=0;
-  for(i=0;i++;i<num.length){
-	  sum=sum+(Math.pow(2,i))*num.charAt(num.length-i);
-  }
+	return parseInt(num,2);
 }
 
 window.decimalToBinary = decimalToBinary;
